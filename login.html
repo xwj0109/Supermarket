@@ -1,0 +1,31 @@
+<!-- Form-->
+<html>
+           
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styleregister.css">
+    </head>
+
+    <body>
+        <div class="user">
+            <header class="user__header">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+                <h1 class="user__title">Welcome to the customer login page</h1>
+            </header>
+            
+            <form class="form" method="POST"  action="login.php" >
+                <div class="form__group">
+                    <input type="email" placeholder="Email" id="email" name="email"class="form__input" />
+                    <input type="password" placeholder="Password" name="password"class="form__input" />
+                </div>
+                
+                <input class="btn" type="submit" value="Login" name="bt_login">
+                <div class="noreg">
+                     <p> If you dont have an account <a href="register.html"> Sign Up </a> ! </p>
+                     <p> If you are an Admininstrator <a href="admin_login.php"> Log in </a> ! </p>
+               </div>
+            </form>
+        </div>
+    </body>
+
+</html>

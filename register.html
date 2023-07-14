@@ -1,0 +1,40 @@
+
+<!-- Form-->
+<html>
+           
+    <head>
+        <title>Sing up</title>
+        <link rel="stylesheet" href="styleregister.css">
+    </head>
+
+</script>
+        
+    </head>
+    <body>
+        <div class="user">
+            <header class="user__header">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+                <h1 class="user__title">Welcome to the Customer sign up page</h1>
+            </header>
+            
+            <form class="form" method="POST" action="register.php" name="f1" onsubmit="return validation()" >
+                <div class="form__group">
+                    <input type="text" placeholder="Name" name="nome"class="form__input" />
+                            
+                    <input type="text" placeholder="Surename" name="cognome"class="form__input" />
+                               
+                    <input type="password" placeholder="Password" name="password"class="form__input" />
+
+                    <input type="email" placeholder="Email" name="email"class="form__input" />
+
+                    <input type="text" placeholder="Phone number" name="telefono"class="form__input" />
+                </div>
+                
+                <input class="btn" type="submit" value="Register" name="bt_register" onclick="return validation()">
+                <div class="noreg">
+                    <p> If you already have an account <a href="login.html"> Log in </a> ! </p>
+                </div>
+            </form>
+        </div>
+    </body>
+  </html>
